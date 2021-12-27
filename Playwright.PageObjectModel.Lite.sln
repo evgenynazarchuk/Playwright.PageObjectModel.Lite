@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playwright.PageObjectModel.Lite", "Playwright.PageObjectModel.Lite\Playwright.PageObjectModel.Lite.csproj", "{05F0B2FA-2992-4539-AC80-1F4C5E90E114}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playwright.PageObjectModel.Lite.Sample", "Playwright.PageObjectModel.Lite.Sample\Playwright.PageObjectModel.Lite.Sample.csproj", "{6D04F6F6-1845-4170-A1B3-3758F7C7CBF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05F0B2FA-2992-4539-AC80-1F4C5E90E114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F0B2FA-2992-4539-AC80-1F4C5E90E114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F0B2FA-2992-4539-AC80-1F4C5E90E114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F0B2FA-2992-4539-AC80-1F4C5E90E114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D04F6F6-1845-4170-A1B3-3758F7C7CBF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D04F6F6-1845-4170-A1B3-3758F7C7CBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D04F6F6-1845-4170-A1B3-3758F7C7CBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D04F6F6-1845-4170-A1B3-3758F7C7CBF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C240FEE7-126F-44F4-9EEC-2089C36DE2D1}
+	EndGlobalSection
+EndGlobal

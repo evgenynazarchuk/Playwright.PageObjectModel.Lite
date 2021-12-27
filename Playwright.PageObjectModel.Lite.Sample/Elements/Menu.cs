@@ -17,7 +17,7 @@ public class Menu : ElementModel
 
     public async Task<StartPage> Logo()
     {
-        var logo = await this.ElementHandle.WaitForSelectorAsync(".navbar__title")!;
+        var logo = await this.ElementHandle.WaitForSelectorAsync(".navbar__title");
         if(logo is null) throw new ArgumentNullException(nameof(logo));
         await logo.ClickAsync();
         var page = await this.GetPage();

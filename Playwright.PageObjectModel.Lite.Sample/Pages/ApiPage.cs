@@ -13,7 +13,6 @@ public class ApiPage : PageModel
 {
     public ApiPage(IPage page) : base(page)
     {
-        page.WaitForLoadStateAsync(LoadState.NetworkIdle);
     }
 
     public async Task<Menu> MenuAsync()

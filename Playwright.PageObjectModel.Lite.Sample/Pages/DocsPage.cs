@@ -13,7 +13,6 @@ public class DocsPage : PageModel
 {
     public DocsPage(IPage page) : base(page)
     {
-        page.WaitForLoadStateAsync(LoadState.NetworkIdle);
     }
 
     public async Task<Menu> Menu()

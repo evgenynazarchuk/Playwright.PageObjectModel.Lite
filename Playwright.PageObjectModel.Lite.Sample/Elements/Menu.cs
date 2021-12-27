@@ -19,6 +19,7 @@ public class Menu : ElementModel
     {
         await Click(".navbar__title");
         var page = await this.GetPage();
+        await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
 
         return new StartPage(page);
     }
@@ -27,6 +28,7 @@ public class Menu : ElementModel
     {
         await Click("//a[text()='API']");
         var page = await this.GetPage();
+        await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
 
         return new ApiPage(page);
     }
@@ -35,6 +37,7 @@ public class Menu : ElementModel
     {
         await Click("xpath=//a[text()='Docs']");
         var page = await this.GetPage();
+        await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
 
         return new DocsPage(page);
     }

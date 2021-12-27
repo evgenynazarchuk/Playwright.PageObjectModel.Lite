@@ -17,33 +17,24 @@ public class Menu : ElementModel
 
     public async Task<StartPage> Logo()
     {
-        var logo = await this.ElementHandle.WaitForSelectorAsync(".navbar__title");
-        if(logo is null) throw new ArgumentNullException(nameof(logo));
-        await logo.ClickAsync();
+        await Click(".navbar__title");
         var page = await this.GetPage();
-        await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
 
         return new StartPage(page);
     }
 
     public async Task<ApiPage> Api()
     {
-        var api = await this.ElementHandle.WaitForSelectorAsync("//a[text()='API']");
-        if (api is null) throw new ArgumentNullException(nameof(api));
-        await api.ClickAsync();
+        await Click("//a[text()='API']");
         var page = await this.GetPage();
-        await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
 
         return new ApiPage(page);
     }
 
     public async Task<DocsPage> Docs()
     {
-        var docs = await this.ElementHandle.WaitForSelectorAsync("//a[text()='Docs']");
-        if (docs is null) throw new ArgumentNullException(nameof(docs));
-        await docs.ClickAsync();
+        await Click("xpath=//a[text()='Docs']");
         var page = await this.GetPage();
-        await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
 
         return new DocsPage(page);
     }

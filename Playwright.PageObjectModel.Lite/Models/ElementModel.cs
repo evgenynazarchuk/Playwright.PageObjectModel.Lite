@@ -16,10 +16,17 @@ public class ElementModel
         this.ElementHandle = elementHandle;
     }
 
-    public async Task<IPage> GetPage()
+    public virtual async Task<IPage> GetPage()
     {
         var ownerFrame = await this.ElementHandle.OwnerFrameAsync();
         if(ownerFrame is null) throw new ArgumentNullException(nameof(ownerFrame));
         return ownerFrame.Page;
+    }
+
+    public virtual async Task Click(string selector)
+    {
+        var element = await this.ElementHandle.WaitForSelectorAsync(selector);
+        if (element is null) throw new ArgumentNullException(nameof(element));
+        await element.ClickAsync();
     }
 }

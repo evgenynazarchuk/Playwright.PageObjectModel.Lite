@@ -13,6 +13,7 @@ public class StartPage : PageModel
 {
     public StartPage(IPage page) : base(page)
     {
+        page.WaitForLoadStateAsync(LoadState.NetworkIdle);
     }
 
     public async Task<Menu> Menu()

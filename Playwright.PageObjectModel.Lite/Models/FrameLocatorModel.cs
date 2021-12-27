@@ -9,7 +9,7 @@ namespace Playwright.PageObjectModel.Lite.Models;
 
 public class FrameLocatorModel
 {
-    public IFrameLocator FrameLocator { get; protected set; }
+    public IFrameLocator FrameLocator { get; }
 
     public FrameLocatorModel(IFrameLocator frameLocator)
     { 

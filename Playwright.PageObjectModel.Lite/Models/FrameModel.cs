@@ -9,7 +9,7 @@ namespace Playwright.PageObjectModel.Lite.Models;
 
 public class FrameModel
 {
-    public IFrame Frame { get; protected set; }
+    public IFrame Frame { get; }
 
     public FrameModel(IFrame frame)
     {

@@ -10,7 +10,7 @@ namespace Playwright.PageObjectModel.Lite.Models;
 
 public class LocatorModel
 {
-    public ILocator Locator { get; protected set; }
+    public ILocator Locator { get; }
 
     public LocatorModel(ILocator locator)
     { 

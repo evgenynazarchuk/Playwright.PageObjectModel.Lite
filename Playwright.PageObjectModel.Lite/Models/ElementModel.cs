@@ -9,7 +9,7 @@ namespace Playwright.PageObjectModel.Lite.Models;
 
 public class ElementModel
 {
-    public IElementHandle ElementHandle { get; protected set; }
+    public IElementHandle ElementHandle { get; }
 
     public ElementModel(IElementHandle elementHandle)
     {
